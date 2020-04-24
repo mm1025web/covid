@@ -22,3 +22,101 @@ h1{
 footer ul li{
     list-style-type: none;
   }
+
+  .about-container{
+    height:50vh;
+    
+}
+
+.about-text{
+    padding-left:100px;
+}
+.about-image{
+    padding-right: 100px;
+}
+
+.about-text h1{
+    font-weight:bolder;
+    color:rgb(3, 71, 116);
+}
+
+
+/*Media Queries */
+
+@media(max-width:1024px)
+{
+    .navbar-brand{
+        margin-left:0px;
+    }
+        
+        a.nav-link:hover{
+            border-bottom:2px solid transparent;
+            font-weight:bold;
+          }
+
+          .home-container{
+            height:60vh;
+          }
+
+          .home-text{
+            padding-right:10px;
+        }
+        .home-image{
+            padding-left: 0px;
+        }
+
+        .about-container{
+            height:50vh;
+            margin-top:10vh;
+            margin-bottom:10vh;
+        }
+    
+        .about-text{
+            padding-left:10px;
+        }
+        .about-image{
+            padding-right: 75px;
+        }
+
+}
+
+
+@media(max-width:768px)
+{
+    
+
+    hr{
+        display:none;
+    }
+      
+    *{
+        font-size:14px;
+    }
+
+        
+.navbar-brand{
+    margin-left:0px;
+}
+    
+    a.nav-link:hover{
+        border-bottom:2px solid transparent;
+        font-weight:bold;
+      }
+
+    .home-text{
+        padding-right:10px;
+    }
+    .home-image{
+        padding-left: 0px;
+    }
+
+    .about-text{
+        padding-left:10px;
+    }
+    .about-image{
+        padding-right: 0px;
+    }
+
+}
+
+
