@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>COVID-19 Site</title>
 </head>
@@ -17,7 +18,7 @@
 
      <!--Navbar Section-->
      <section class="nav-container" id="navbar">
-        <nav class="navbar-default navbar navbar-expand-lg navbar-light bg-light static-top">
+        <nav class="navbar-default navbar navbar-expand-lg static-top">  <!-- navbar-light bg-light-->
           <div class="navbar-brand">
               <a class="navbar-brand" href="#Home">
                 <i class="fas fa-virus ml-4" style="color:rgb(3, 71, 116); font-size:60px;"></i>   
@@ -25,8 +26,7 @@
             </a>
            </div>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                    </span>
+                   <i class="fa fa-bars" style="color: grey; font-size: 25px;"></i>
                   </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
@@ -48,6 +48,13 @@
           </nav>
         </section>
 
+        <!--HTML For Light Bulb-->
+
+        <div class="container-fluid text-right dark-bulb">
+           
+            <button class="btn dark-mode-btn" id="nmode" style="width: 70px;"><i id="bulb" class="far fa-lightbulb fa-3x" style="color: grey;"></i></button>
+         </div>
+
 
         <!--Home section-->
 
@@ -61,7 +68,9 @@
                         <h4 class=" pr-auto">Virus Disease  (COVID-19)</h4><br>
 
                         <p class="lead  pr-auto">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus aperiam facilis nemo. Minus, ipsa similique. Fugit deserunt iusto eveniet suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, amet!
+                            COVID-19 is a new illness that can affect our lungs and airways. It is caused by a virus called the corona virus. The illness first started in Wuhan, Hubei, China.
+
+                            Common signs of the infection include respiratory symtpoms, fever, cough, shortness of breath and breathing difficulty. Standard recommendations to prevent the virus from spreading is regular hand washing, covering your mouth and nose and eating thoroughly cooked food.
                         </p>
                         <br>
                     </div>
@@ -91,7 +100,13 @@
                         <h1 class=" pr-auto text-center">About</h1><br>
 
                         <p class="  pr-auto">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus aperiam facilis nemo. Minus, ipsa similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate saepe minima, omnis ratione architecto fugiat quia magnam illum vel?
+                            The disease caused by the novel coronavirus first identified in Wuhan, China, has been named coronavirus disease 2019 (COVID-19) – ‘CO’ stands for corona, ‘VI’ for virus, and ‘D’ for disease.
+                            Formerly, this disease was referred to as ‘2019 novel coronavirus’ or ‘2019-nCoV.’
+                            
+                            The COVID-19 virus is a new virus linked to the same family of viruses as Severe Acute Respiratory Syndrome (SARS) and some types of common cold.
+                            As of April 22, 2020, over 2.5 million people have contracted the virus worldwide, and it has caused over 170,000 deaths.
+                            
+                            In the United States alone, the virus has affected over 800,000 people, resulting in more than 45,000 deaths.    
                         </p>
                         <br>
                     </div>
@@ -184,145 +199,168 @@
             </div>
         </section>
 
+        <br><br>
 
-    <footer class="footer footer_bg_1 mt-5">
-      <!--  <div class="circle_ball about-image">
-            <img src="symptoms.png" alt="" style="width: 170px;">
-        </div>-->
-            <div class="footer_top">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-xl-4 col-md-4 col-lg-4">
-                            <div class="footer_widget">
-                                <h2>
-                                    <u class="text-light" style="font-size: 30px;">LINKS</u>
-                                </h2>
-                                <ul>
-                                    <li><a target="_blank" href="#">Home</a></li>
-                                    <li><a target="_blank" href="#">India</a></li>
-                                    <li><a target="_blank" href="#">Global</a></li>
-                                    <li><a target="_blank" href="#">More</a></li>
-                                </ul>
+        <footer class="footer footer_bg_1 mt-5">
+            <!--  <div class="circle_ball about-image">
+                  <img src="symptoms.png" alt="" style="width: 170px;">
+              </div>-->
+                  <div class="footer_top">
+                      <div class="container text-center">
+                          <div class="row">
+                              <div class="col-xl-4 col-md-4 col-lg-4">
+                                  <div class="footer_widget">
+                                      <h2>
+                                          <u class="text-dark font-weight-bolder" style="font-size: 30px;">LINKS</u>
+                                      </h2>
+                                      <ul>
+                                          <li><a  href="#navbar">Home</a></li>
+                                          <li><a target="_blank" href="#">India</a></li>
+                                          <li><a target="_blank" href="#">Global</a></li>
+                                          
+                                      </ul>
+          
+                                  </div>
+                              </div>
+                              <div class="col-xl-4 col-md-4 col-lg-4">
+                                  <div class="footer_widget text-center">
+                                        <img src="coronavirus_PNG6.png" alt="corona-footer" style="width: 250px;" data-aos="rotate-ac" data-aos-duration="3000" data-aos-easing="ease-in-out">
+                                        <div class="container text-center icons">
+                                          <a href="http://www.facebook.com/webarchclub" target="_blank"> <i class="fab fa-facebook fa-2x mr-3 ml-3 " style="color: white;"></i> </a>
+                                          <a href="http://www.instagram.com/webarchclub" target="_blank"><i class="fab fa-instagram fa-2x mr-3  " style="color: white;"></i> </a>
+                                          <a href="http://www.github.com/webarchclub" target="_blank"><i class="fab fa-github fa-2x mr-3 " style="color: white;"></i> </a>
+                                         </div>
+             
+                                  </div>
+                              </div>
+                              <div class="col-xl-4 col-md-4 col-lg-4">
+                                  <div class="footer_widget">
+                                      <h2>
+                                             <u class="text-dark font-weight-bolder" style="font-size: 30px;"> MORE</u>
+                                             <ul>
+                                              <li><a target="_blank" href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.who.int/emergencies/diseases/novel-coronavirus-2019&ved=2ahUKEwjT8Lyz_oPpAhVrIbcAHSFuAFkQFjAPegQICBAB&usg=AOvVaw2bqm1AADArANglLPqDC5aW">WHO</a></li>
+                                              <li><a target="_blank" href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://mohfw.gov.in/&ved=2ahUKEwjbkLfu_oPpAhXRX3wKHaI-AhQQFjAAegQIARAB&usg=AOvVaw0P12pu_4vOFkMyTPfOrAEu">MoHFW</a></li>
+                                              <li><a target="_blank" href="https://mygov.in/covid-19/">MyGov.in</a></li>
+                                          </ul>
+                                      </h2>
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="copy-right_text">
+                      <div class="container">
+                          <div class="footer_border"></div>
+                          <div class="row">
+                              <div class="col-xl-12">
+                                  <div class="text-center"><a href="#navbar"><i class="fa fa-arrow-up fa-2x"></i></a></div>
+                                  <p class="copy_right text-center">
+      
+                                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved || Developed by <a href="https://webarchsrm.com" target="_blank" class="font-weight-bolder"><i><u class="text-light">Team WebArch<u></i></a>
+      
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+        
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--JS For Light Bulb-->
+
+<script>
     
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-3 col-lg-4">
-                            <div class="footer_widget">
-                                  <img src="corona3.png" alt="" style="width: 250px;" data-aos="rotate-ac" data-aos-duration="3000" data-aos-easing="ease-in-out">
-                                  <div class="container text-center icons">
-                                    <a href="http://www.facebook.com/m.muazam.98" target="_blank"> <i class="fab fa-facebook fa-2x mr-3 ml-3 " style="color: white;"></i> </a>
-                                    <a href="http://www.instagram.com/m.muazam.98" target="_blank"><i class="fab fa-instagram fa-2x mr-3  " style="color: white;"></i> </a>
-                                    <a href="http://www.github.com/mm1025web" target="_blank"><i class="fab fa-github fa-2x mr-3 " style="color: white;"></i> </a>
-                                   </div>
-       
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-3 col-lg-4">
-                            <div class="footer_widget">
-                                <h2>
-                                       <u class="text-light" style="font-size: 30px;"> LINKS</u>
-                                       <ul>
-                                        <li><a target="_blank" href="schedule.html">WHO</a></li>
-                                        <li><a target="_blank" href="speakers.html">WHO</a></li>
-                                        <li><a target="_blank" href="contact.html">WHO</a></li>
-                                    </ul>
-                                </h2>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copy-right_text">
-                <div class="container">
-                    <div class="footer_border"></div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="text-center"><a href="#navbar"><i class="fa fa-arrow-up fa-2x"></i></a></div>
-                            <p class="copy_right text-center">
+    function _(e) {
+	return document.getElementById(e);
+}
 
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved || Developed by <a href="https://webarchsrm.com" target="_blank" class="font-weight-bolder"><i><u class="text-light">Team WebArch<u></i></a>
+var nightmode = true;
+var lastnight = 0;
+var nrMain = 0;
 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-<!--
-    <footer class="footer footer_bg_1 mt-5">
-        <div class="circle_ball d-none d-lg-block">
-            <img src="img/banner/footer_ball.png" alt="">
-        </div>
-            <div class="footer_top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-md-4 col-lg-4">
-                            <div class="footer_widget">
-                                <h2>
-                                        <u class="text-light">Follow Us</u>
-                                </h2>
-                                <ul>
-                                    <li><a target="_blank" href="#">Global</a></li>
-                                    <li><a target="_blank" href="#">Twitter</a></li>
-                                    <li><a target="_blank" href="#">Instagram</a></li>
-                                    <li><a target="_blank" href="#">Github</a></li>
-                                </ul>
+var snmb = _('bulb') || null;
+
+var allColors = [];
+
+allColors.push(['black',[20,20,20],[230,230,230]]);
+allColors.push(['dark-gray',[90,90,90],[160,160,160]]);
+allColors.push(['light-gray',[160,160,160],[90,90,90]]);
+allColors.push(['white',[230,230,230],[20,20,20]]);
+
+var cssColor = [];
+GetCssColors();
+
+function GetCssColors() {
+
+	var ix = 1;
+		 		
+	for (i = 0; i < allColors.length; i++) {
+
+		cssColor[allColors[i][0]] = [allColors[i][ix][0], allColors[i][ix][1], allColors[i][ix][2]];
+		document.documentElement.style.setProperty(('--' + allColors[i][0]), 'rgb(' + cssColor[allColors[i][0]].join() + ')');
+	}
+
+	document.documentElement.style.setProperty(('--background_d'), 'var(--black)');	
+}
+
+_('nmode').onclick = function() {
+
+	nightmode = !nightmode;
+	nightRun();
+
     
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-4 col-lg-4">
-                            <div class="footer_widget">
-                                <h2>
-                                        <u class="text-light">Links</u>
-                                </h2>
-                                <ul>
-                                    <li><a target="_blank" href="schedule.html">Global</a></li>
-                                    <li><a target="_blank" href="speakers.html">India</a></li>
-                                    <li><a target="_blank" href="contact.html">More</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-4 col-lg-4">
-                            <div class="footer_widget">
-                                <h2>
-                                       <u class="text-light"> Contact</u>
-                                </h2>
-                                <p>
-                                    webarch@gmail.com <br>
-                                    SRM-IST, KTR <br>
-                                    
-                                    Chennai, 603203
-                                    
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copy-right_text">
-                <div class="container">
-                    <div class="footer_border"></div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <p class="copy_right text-center">
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved || Developed by <a href="https://webarchsrm.com" target="_blank" class="font-weight-bolder"><u class="text-light">Team WebArch<u></a>
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>-->
+  
+}
 
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-     <!--aos-->
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>   
-       AOS.init(); 
-   </script>
-     </body>
-     </html>
+
+function nightRun() {
+
+	if (lastnight == 0) { var dt = 1; }
+	else { var dt = Math.min(50, (performance.now() - lastnight)); }
+	
+	lastnight = performance.now();
+
+	nrMain = Math.min(100, Math.max(0, (nrMain + (dt * (nightmode ? -0.1: 0.1)))));		
+	var nrCos = (1 - Math.cos(nrMain / 100 * Math.PI)) / 2;
+	
+	for (i = 0; i < allColors.length; i++) {
+		
+		for (ii = 0; ii < 3; ii++) {
+			cssColor[allColors[i][0]][ii] = Math.round(allColors[i][1][ii] + ((allColors[i][2][ii] - allColors[i][1][ii]) * nrCos));
+		}
+		document.documentElement.style.setProperty(('--' + allColors[i][0]), 'rgb(' + cssColor[allColors[i][0]].join() + ')');
+	}
+	
+	var rect = snmb.getBoundingClientRect();
+
+	var t = Math.max(0, ((nrCos * 200) - 100));
+	var b = Math.min(100, (nrCos * 200));
+
+	document.documentElement.style.setProperty(('--background'), 'radial-gradient(ellipse  at ' + ((rect.left + rect.right) / 2) + 'px ' + (rect.top + 20) + 'px, rgb(255, 255, 255) 0%, rgb(255, 255, 255) ' + t + '%, rgb(20,20,20) ' + b + '%, rgb(20,20,20) 100%)');
+
+  if (nrMain != (nightmode ? 0 : 100)) {
+
+    requestAnimationFrame(nightRun);
+
+	} else {
+		
+		lastnight = 0;
+	}	
+}
+</script>
+
+<script>   
+    AOS.init(); 
+ </script>
+
+</body>
+</html>
