@@ -52,7 +52,7 @@
 
         <div class="container-fluid text-right dark-bulb">
            
-            <button class="btn dark-mode-btn" id="nmode" style="width: 70px;"><i id="bulb" class="far fa-lightbulb fa-3x" style="color: grey;"></i></button>
+            <button class="btn dark-btn" id="nmode" onclick="myFun()"  style="width: 70px;"><i id="bulb" class="far fa-lightbulb fa-3x" ></i></button>
          </div>
 
 
@@ -70,7 +70,8 @@
                         <p class="lead  pr-auto">
                             COVID-19 is a new illness that can affect our lungs and airways. It is caused by a virus called the corona virus. The illness first started in Wuhan, Hubei, China.
 
-                            Common signs of the infection include respiratory symtpoms, fever, cough, shortness of breath and breathing difficulty.  </p>
+                            Common signs of the infection include respiratory symtpoms, fever, cough, shortness of breath and breathing difficulty. Standard recommendations to prevent the virus from spreading is regular hand washing, covering your mouth and nose and eating thoroughly cooked food.
+                        </p>
                         <br>
                     </div>
                 </div>
@@ -289,11 +290,14 @@ var snmb = _('bulb') || null;
 
 var allColors = [];
 
-allColors.push(['black',[20,20,20],[230,230,230]]);
+allColors.push(['black',[230,230,230],[20,20,20]]);
 allColors.push(['dark-gray',[90,90,90],[160,160,160]]);
 allColors.push(['light-gray',[160,160,160],[90,90,90]]);
-allColors.push(['white',[230,230,230],[20,20,20]]);
+allColors.push(['white',[20,20,20],[230,230,230]]);
 
+document.getElementById("bulb").onclick = function(){
+	document.getElementById("output").style.color = 'black';
+}
 var cssColor = [];
 GetCssColors();
 
@@ -344,7 +348,7 @@ function nightRun() {
 	var t = Math.max(0, ((nrCos * 200) - 100));
 	var b = Math.min(100, (nrCos * 200));
 
-	document.documentElement.style.setProperty(('--background'), 'radial-gradient(ellipse  at ' + ((rect.left + rect.right) / 2) + 'px ' + (rect.top + 20) + 'px, rgb(255, 255, 255) 0%, rgb(255, 255, 255) ' + t + '%, rgb(20,20,20) ' + b + '%, rgb(20,20,20) 100%)');
+	document.documentElement.style.setProperty(('--background'), 'radial-gradient(ellipse  at ' + ((rect.left + rect.right) / 2) + 'px ' + (rect.top + 20) + 'px, rgb(0, 0, 0) 0%, rgb(0, 0, 0) ' + t + '%, rgb(255,255,255) ' + b + '%, rgb(255,255,255) 100%)');
 
   if (nrMain != (nightmode ? 0 : 100)) {
 
@@ -356,7 +360,11 @@ function nightRun() {
 	}	
 }
 </script>
-
+<script>
+    function myFunc() {
+          document.getElementById("bulb").className = "mystyle";
+      }
+    </script>
 <script>   
     AOS.init(); 
  </script>
