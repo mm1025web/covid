@@ -10,12 +10,12 @@
 
 :root {
   
-  --background: #121212;
+  --background: #fff;
 
   --black: rgb(20,20,20);
   --dark-gray: rgb(75,75,75);
   --light-gray: rgb(185,185,185);
-  --white: rgb(255, 255, 255);
+  --white: rgb(0, 0, 0);
 
 }  
 
@@ -156,6 +156,14 @@ a.nav-link:hover{
   60% {
     transform: rotate(-20deg);
   }
+}
+.style{
+  color: ;
+}
+.mystyle {
+  
+  color: white;
+  
 }
 /*End of navbar */
 
